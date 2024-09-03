@@ -3,14 +3,7 @@ import toast, { Toaster } from 'react-hot-toast';
 import { RiSearchEyeFill } from 'react-icons/ri';
 import css from './SearchBar.module.css';
 import React from 'react';
-
-interface SearchBarProps {
-  handleChangeQuary: (query: string) => void;
-}
-
-interface FormValue {
-  query: string;
-}
+import { FormValue, SearchBarProps } from './TypesSearchBarProps';
 
 const SearchBar: React.FC<SearchBarProps> = ({ handleChangeQuary }) => {
   const handleSubmit = (

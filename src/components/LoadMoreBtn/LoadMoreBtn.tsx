@@ -1,9 +1,6 @@
 import React from 'react';
 import css from './LoadMoreBtn.module.css';
-
-interface LoadMoreProps {
-  handleLoadMore: () => Promise<void>;
-}
+import { LoadMoreProps } from './TypesLoadMoreBtnProps';
 
 const LoadMoreBtn: React.FC<LoadMoreProps> = ({ handleLoadMore }) => {
   return (

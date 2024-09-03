@@ -1,13 +1,6 @@
 import React from 'react';
 import ReactModal from 'react-modal';
-
-
-interface ImageModalProps {
-  openModal: boolean;
-  closeModal: () => void;
-  urls: string;
-  alt: string;
-}
+import { ImageModalProps } from './TypesImageModalProps';
 
 const customStyle = {
   overlay: {

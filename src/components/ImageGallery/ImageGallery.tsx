@@ -1,14 +1,12 @@
 import React from 'react';
-import { UnplashImage } from '../../articles-api';
 import ImageCard from '../ImageCard/ImageCard';
 import css from './ImageGallery.module.css';
+import { ImageGalleryProps } from './TypesImageGalleryProps';
 
-interface ImageGalleryProps {
-  articles: UnplashImage[];
-  handleOpenModal: (img: UnplashImage) => void
-}
-
-const ImageGallery: React.FC<ImageGalleryProps> = ({ articles, handleOpenModal }) => {
+const ImageGallery: React.FC<ImageGalleryProps> = ({
+  articles,
+  handleOpenModal,
+}) => {
   return (
     <ul className={css.listImages}>
       {articles.map(item => {

@@ -11,7 +11,7 @@ type CardProps = {
   };
   rel: string;
   description: string;
-  handleOpenModal: (img: UnplashImage) => void;
+  handleOpenModal: (urls: UnplashImage) => void;
 };
 
 const ImageCard: FC<CardProps> = ({
@@ -23,7 +23,7 @@ const ImageCard: FC<CardProps> = ({
   return (
     <div>
       <img
-        onClick={() => handleOpenModal({ urls: urls.regular })}
+        onClick={() => handleOpenModal({ id: '', urls, rel, description })}
         src={urls.small}
         rel={rel}
         alt={description}

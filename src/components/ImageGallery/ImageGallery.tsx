@@ -8,10 +8,7 @@ interface ImageGalleryProps {
   handleOpenModal: (img: UnplashImage) => void
 }
 
-const ImageGallery: React.FC<ImageGalleryProps> = ({
-  articles,
-  handleOpenModal,
-}) => {
+const ImageGallery: React.FC<ImageGalleryProps> = ({ articles, handleOpenModal }) => {
   return (
     <ul className={css.listImages}>
       {articles.map(item => {
